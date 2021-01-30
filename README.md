@@ -17,6 +17,13 @@ The following commands will setup your name and email address in Git on your use
 
 2. <a href="http://www.youtube.com/watch?feature=player_embedded&v=CKcqniGu3tA" target="_blank">How to Clone a Repository from GitHub</a>
     * **NOTE:** Make sure you are in the project directory created in Step 1. 
-    * Use the following command to clone the **Senior-Project** repo: `clone https://github.com/ITM4900-Team-4-Senior-Project/Senior-Project.git`
+    * Use the following command to clone the **Senior-Project** repo: `clone https://github.com/ITM4900-Team-4-Senior-Project/Senior-Project.git`.
+    * A new folder (**Senior-Project**) will be created in the current working directory (see the first bullet above).
 
-3. Stuff
+## Project Workflow
+
+As a way of tracking and retaining our code, there is a branch for each project member to work from. 
+
+1. Run the following command within the **Senior Project** directory ( to switch to your branch: `git checkout [YOUR BRANCH NAME]`. 
+    
+2. Make sure whichever IDE you are using to for coding tasks is saving your work in the **Senior-Project** directory (this will differ between IDEs). 
