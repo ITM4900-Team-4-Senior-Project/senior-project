@@ -13,7 +13,7 @@ The following commands will setup your name and email address in Git on your use
 
 ## Setting up the project on your local development environment (computer)
 
-1. Create a **sites** or **projects** folder on your computer. This is where the **Senior-Project** will be setup. This step can be achieve in either using the desktop "add folder" method or the `mkdir folder-name` command in powershell of unix terminal. 
+1. Create a **sites** or **projects** folder on your computer. This is where the **Senior-Project** will be setup. This step can be achieve in either using the desktop "add folder" method or the `mkdir folder-name` command in powershell or unix terminal. 
 
 2. <a href="http://www.youtube.com/watch?feature=player_embedded&v=CKcqniGu3tA" target="_blank">How to Clone a Repository from GitHub</a>
     * **NOTE:** Make sure you are in the project directory created in Step 1. 
