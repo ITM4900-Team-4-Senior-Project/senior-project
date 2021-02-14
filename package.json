@@ -1,0 +1,22 @@
+{
+  "name": "senior-project",
+  "version": "1.0.0",
+  "description": "A repository (repo) for tracking development work.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ITM4900-Team-4-Senior-Project/Senior-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ITM4900-Team-4-Senior-Project/Senior-Project/issues"
+  },
+  "homepage": "https://github.com/ITM4900-Team-4-Senior-Project/Senior-Project#readme"
+}
