@@ -1,33 +1,70 @@
-# Senior-Project
+# Getting Started with Create React App
 
-A repository (repo) for tracking development work.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Setup Your Git User Profile.
-The following commands will setup your name and email address in Git on your user account.
-1. Add your **name** to your profile.
-`git config --global user.name "YOUR NAME GOES HERE"`.
+## Available Scripts
 
-2. Add your **email** to your profile.
-`git config --global user.email "YOUR@EMAIL-ADDRESS.HERE"`.
+In the project directory, you can run:
 
+### `npm start`
 
-## Setting Up the Project on Your Local Development Environment
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-![Cloning Example](https://github.com/ITM4900-Team-4-Senior-Project/Senior-Project/blob/main/docs/clone-repo.gif?raw=true)
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-1. Create a **sites** or **projects** folder on your computer. This is where the **Senior-Project** will be setup. This step can be achieve in either using the desktop "add folder" method or the `mkdir folder-name` command in powershell or unix terminal.
+### `npm test`
 
-2. <a href="http://www.youtube.com/watch?feature=player_embedded&v=CKcqniGu3tA" target="_blank">How to Clone a Repository from GitHub</a>
-    * **NOTE:** Make sure you are in the project directory created in Step 1.
-    * Use the following command to clone the **Senior-Project** repo: `clone https://github.com/ITM4900-Team-4-Senior-Project/Senior-Project.git`.
-    * A new folder (**Senior-Project**) will be created in the current working directory (see the first bullet above).
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Creating & Checking Out Branches
+### `npm run build`
 
-![Creating & Checking Out Branches Example](https://github.com/ITM4900-Team-4-Senior-Project/Senior-Project/blob/main/docs/create-checkout-branch.gif?raw=true)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-As a way of tracking and retaining our code, create a branch for you work.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-1. Run the following command within the **Senior Project** directory ( to switch to your branch: `git checkout -b [YOUR BRANCH NAME]`. The `-b` switch will create a new branch with the name you give it. If you already have a branch you can omit the `-b` switch.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-2. Make sure whichever IDE you are using to for coding tasks is saving your work in the **Senior-Project** directory (this will differ between IDEs).
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
