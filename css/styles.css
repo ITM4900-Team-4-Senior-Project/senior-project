@@ -34,7 +34,7 @@ html, body, .grid-container {
 
 .footer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas: ". . ." ". . .";
@@ -68,7 +68,6 @@ p.header-text {
     overflow: hidden;
 }
 
-    /* Style the links inside the navigation bar */
     .topnav a {
         float: left;
         color: #FEFFEF;
@@ -78,14 +77,12 @@ p.header-text {
         font-size: 20px;
     }
 
-        /* Change the color of links on hover */
         .topnav a:hover {
             background-color: #A19E91;
             color: black;
             padding-bottom: 16px;
         }
 
-        /* Add a color to the active/current link */
         .topnav a.active {
             border-bottom: 8px solid #14b6e6;
             font-weight: bold;
@@ -102,9 +99,7 @@ p.header-text {
     .login_link a {
         color: #14b6e6;
     }
-    .login_link a:hover {
-        color: aqua;
-    }
+
 
 h1.title_bar {
     font-family: 'Roboto', sans-serif;
@@ -113,3 +108,37 @@ h1.title_bar {
     color: #1D4E89;
 }
 
+.header_logo {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.login_button {
+    background-color: #A19E91 !important;
+}
+
+.signin_button {
+    background-color: #1D4E89 !important;
+}
+
+.social {
+    width: 100%;
+    margin: auto;
+}
+
+.social_icon {
+    height: 40px;
+    width: 40px;
+}
+    .social_icon:hover {
+        opacity: 0.7;
+}
+
+.hiw_title {
+    text-align: right;
+    font-family: Roboto, sans-serif;
+
+}
