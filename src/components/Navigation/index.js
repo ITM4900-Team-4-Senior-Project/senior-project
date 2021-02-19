@@ -1,21 +1,23 @@
 import React from 'react'
 import { Link, Route, Switch } from 'react-router-dom'
 
-import Container from 'react-bootstrap/Container'
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
+import { Navbar, Nav, Button } from 'react-bootstrap'
 
 const Navigation = () => {
   return (
-    <Navbar bg="primary" variant="dark">
-      <Container>
+    <Navbar collapseOnSelect expand="lg" bg="none" variant="dark">
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#how-it-works">How it Works</Nav.Link>
-          <Nav.Link href="#about">About</Nav.Link>
-          <Nav.Link href="#contact">Contact</Nav.Link>
+          <Nav.Link href="/">Home</Nav.Link>
+          <Nav.Link href="/how-it-works">How it Works</Nav.Link>
+          <Nav.Link href="/about">About</Nav.Link>
+          <Nav.Link href="pricing">Contact</Nav.Link>
         </Nav>
-      </Container>
+        <Nav>
+          <Button variant="secondary">Login/Register</Button>
+        </Nav>
+      </Navbar.Collapse>
     </Navbar>
   )
 }
