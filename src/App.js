@@ -2,9 +2,11 @@
 // import { BrowserRouter as Router } from 'react-router-dom';
 
 // Import components
-import Navigation from './components/Navigation'
-import Brand from './components/Brand'
 import { Container } from 'react-bootstrap'
+
+import Brand from './components/Brand'
+import Navigation from './components/Navigation'
+import Footer from './components/Footer'
 
 // Import resources
 import './App.css'
@@ -26,6 +28,13 @@ function App() {
         </div>
 
       </header>
+
+      <Container>
+        <main>Body</main>
+      </Container>
+
+      <Footer />
+
     </div>
   )
 }
