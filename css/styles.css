@@ -25,19 +25,19 @@ html, body, .grid-container {
 
 .main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     gap: 0px 0px;
-    grid-template-areas: ". . ." ". . .";
+    grid-template-areas: ".";
     grid-area: main;
 }
 
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 0px 0px;
-    grid-template-areas: ". . ." ". . .";
+    grid-template-areas: ". . .";
     grid-area: footer;
 }
 
@@ -121,8 +121,8 @@ h1.title_bar {
 }
 
 .social {
-    width: 100%;
-    margin: auto;
+    grid-column: 2;
+    justify-self: center;
 }
 
 .social_icon {
