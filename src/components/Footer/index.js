@@ -1,5 +1,3 @@
-
-import { Button } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookSquare, faLinkedinIn, faTwitterSquare, faYoutube } from '@fortawesome/free-brands-svg-icons'

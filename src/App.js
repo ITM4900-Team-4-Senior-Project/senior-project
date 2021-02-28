@@ -14,6 +14,7 @@ import './App.css'
 function App() {
   return (
     <div className="App">
+
       <header>
         <div className="brand-container">
           <Container>
@@ -29,9 +30,12 @@ function App() {
 
       </header>
 
-      <Container>
-        <main>Body</main>
-      </Container>
+      <main>
+        <Container fluid="true">
+          <img
+            src="/images/pencil-hero.jpg" alt=""/>
+        </Container>
+      </main>
 
       <Footer />
 

@@ -19,6 +19,34 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
+### Project Structure
+
+```
+├── package.json
+├── package-lock.json
+├── public
+│   ├── index.html
+│   ├── manifest.json.old
+│   ├── robots.txt
+│   └── site.webmanifest
+└── src
+    ├── App.css
+    ├── App.js
+    ├── components
+    │   ├── Brand
+    │   │   └── index.js
+    │   ├── Footer
+    │   │   └── index.js
+    │   └── Navigation
+    │       └── index.js
+    └── index.js
+```
+There are two main folders `public` and `src`. `src` is were all of the development happens. `public`, as the name suggests, is where public resources are housed or compiled. 
+
+`index.js`, within `src`, works as the entry point of the application. It uses ReactDOM.render to render App and gets the project started. App in turn models the base template for future pages. 
+
+`src/components` is used to organize components used through the application. Having an `index.js` file under each component allows us to target just the directory in imports. 
+
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
