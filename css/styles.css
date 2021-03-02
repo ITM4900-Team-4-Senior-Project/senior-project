@@ -25,19 +25,19 @@ html, body, .grid-container {
 
 .main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     gap: 0px 0px;
-    grid-template-areas: ". . ." ". . .";
+    grid-template-areas: ".";
     grid-area: main;
 }
 
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 0px 0px;
-    grid-template-areas: ". . ." ". . .";
+    grid-template-areas: ". . .";
     grid-area: footer;
 }
 
@@ -102,13 +102,34 @@ p.header-text {
     .login_link a {
         color: #14b6e6;
     }
-    .login_link a:hover {
-        color: aqua;
-    }
 
 h1.title_bar {
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
     padding: 20px 0px 0px 70px;
     color: #1D4E89;
+}
+
+.header_logo {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+}
+
+.login_button {
+    background-color: #A19E91 !important;
+}
+
+.social {
+    grid-column: 2;
+    justify-self: center;
+}
+
+.social_icon {
+    height: 40px;
+    width: 40px;
+}
+
+.social_icon:hover {
+    opacity: 0.7;
 }
