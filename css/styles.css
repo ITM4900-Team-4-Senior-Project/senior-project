@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+      color:#000000;
+      background-color:#FFFFFF;
+      background-repeat:no-repeat;
+    }
+a  { color:#0000FF; }
+a:visited { color:#800080; }
+a:hover { color:#008000; }
+a:active { color:#FF0000; }
+
+html, body, .grid-container {
+    height: 100%;
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.6fr 2.1fr 0.3fr;
+    gap: 0px 0px;
+    grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: ".";
+    grid-area: main;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: ". . .";
+    grid-area: footer;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr;
+    gap: 0px 0px;
+    grid-template-areas: ". . ." "menu menu login";
+    grid-area: header;
+}
+
+.menu {
+    grid-area: menu;
+    background-color: #1D4E89;
+}
+
+.login {
+    grid-area: login;
+    background-color: #1D4E89;
+}
+
+p.header-text {
+    font-family: 'Roboto', sans-serif;
+}
+.topnav {
+    background-color: #1D4E89;
+    overflow: hidden;
+}
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        color: #FEFFEF;
+        text-align: center;
+        padding: 44px 16px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            background-color: #A19E91;
+            color: black;
+            padding-bottom: 16px;
+        }
+
+        /* Add a color to the active/current link */
+        .topnav a.active {
+            border-bottom: 8px solid #14b6e6;
+            font-weight: bold;
+            padding-bottom: 16px !important;
+            color: white;
+        }
+
+.login_link {
+    font-size: 20px;
+    font-weight: bold;
+    position:center;
+    padding: 44px 100px;
+}
+    .login_link a {
+        color: #14b6e6;
+    }
+
+h1.title_bar {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    padding: 20px 0px 0px 70px;
+    color: #1D4E89;
+}
+
+.header_logo {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+}
+
+.login_button {
+    background-color: #A19E91 !important;
+}
+
+.social {
+    grid-column: 2;
+    justify-self: center;
+}
+
+.social_icon {
+    height: 40px;
+    width: 40px;
+}
+
+.social_icon:hover {
+    opacity: 0.7;
+}

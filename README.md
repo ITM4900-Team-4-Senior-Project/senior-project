@@ -1,33 +1,65 @@
-# Senior-Project
+# Getting Started
 
-A repository (repo) for tracking development work.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Setup Your Git User Profile.
-The following commands will setup your name and email address in Git on your user account.
-1. Add your **name** to your profile.
-`git config --global user.name "YOUR NAME GOES HERE"`.
+## Available Scripts
 
-2. Add your **email** to your profile.
-`git config --global user.email "YOUR@EMAIL-ADDRESS.HERE"`.
+In the project directory, begin with:
 
+### `npm install`
+Installs the project and its dependencies.
 
-## Setting Up the Project on Your Local Development Environment
+With the project install, you can run:
 
-![Cloning Example](https://github.com/ITM4900-Team-4-Senior-Project/Senior-Project/blob/main/docs/clone-repo.gif?raw=true)
+### `npm start`
 
-1. Create a **sites** or **projects** folder on your computer. This is where the **Senior-Project** will be setup. This step can be achieve in either using the desktop "add folder" method or the `mkdir folder-name` command in powershell or unix terminal.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-2. <a href="http://www.youtube.com/watch?feature=player_embedded&v=CKcqniGu3tA" target="_blank">How to Clone a Repository from GitHub</a>
-    * **NOTE:** Make sure you are in the project directory created in Step 1.
-    * Use the following command to clone the **Senior-Project** repo: `clone https://github.com/ITM4900-Team-4-Senior-Project/Senior-Project.git`.
-    * A new folder (**Senior-Project**) will be created in the current working directory (see the first bullet above).
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-## Creating & Checking Out Branches
+### Project Structure
 
-![Creating & Checking Out Branches Example](https://github.com/ITM4900-Team-4-Senior-Project/Senior-Project/blob/main/docs/create-checkout-branch.gif?raw=true)
+```
+├── package.json
+├── package-lock.json
+├── public
+│   ├── index.html
+│   ├── robots.txt
+│   └── site.webmanifest
+└── src
+    ├── App.css
+    ├── App.js
+    ├── components
+    │   ├── Brand
+    │   │   └── index.js
+    │   ├── Footer
+    │   │   └── index.js
+    │   └── Navigation
+    │       └── index.js
+    └── index.js
+```
+There are two main folders `public` and `src`. `src` is were all of the development happens. `public`, as the name suggests, is where public resources are housed or compiled.
 
-As a way of tracking and retaining our code, create a branch for you work.
+`index.js`, within `src`, works as the entry point of the application. It uses ReactDOM.render to render App and gets the project started. App in turn models the base template for future pages.
 
-1. Run the following command within the **Senior Project** directory ( to switch to your branch: `git checkout -b [YOUR BRANCH NAME]`. The `-b` switch will create a new branch with the name you give it. If you already have a branch you can omit the `-b` switch.
+`src/components` is used to organize components used through the application. Having an `index.js` file under each component allows us to target just the directory in imports.
 
-2. Make sure whichever IDE you are using to for coding tasks is saving your work in the **Senior-Project** directory (this will differ between IDEs).
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+To learn React-Bootstrap, check ou the [React-Bootstrap Documentation](https://react-bootstrap.github.io/).
