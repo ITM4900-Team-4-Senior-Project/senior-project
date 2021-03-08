@@ -22,9 +22,10 @@ You will also see any lint errors in the console.
 ### Project Structure
 
 ```
-├── package.json
 ├── package-lock.json
+├── package.json
 ├── public
+│   ├── images
 │   ├── index.html
 │   ├── robots.txt
 │   └── site.webmanifest
@@ -38,7 +39,13 @@ You will also see any lint errors in the console.
     │   │   └── index.js
     │   └── Navigation
     │       └── index.js
-    └── index.js
+    ├── index.js
+    └── pages
+        ├── 404-page-not-found.js
+        ├── about.js
+        ├── contact.js
+        ├── home.js
+        └── how-it-works.js
 ```
 There are two main folders `public` and `src`. `src` is were all of the development happens. `public`, as the name suggests, is where public resources are housed or compiled.
 

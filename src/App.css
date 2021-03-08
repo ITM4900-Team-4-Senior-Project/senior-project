@@ -209,3 +209,20 @@ footer .grid-container--region-right {
 .link-list--vertical ul li {
   padding-bottom: .5rem;
 }
+
+/* ========== */
+/* Page Style */
+
+/* 404 Error Page */
+.page-not-found--wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.page-not-found--wrapper > * {
+  margin-bottom: 1rem;
+}
