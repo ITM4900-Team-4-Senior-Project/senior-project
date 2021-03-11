@@ -35,9 +35,7 @@ function App() {
           <img src="/images/pencil-hero.jpg" alt="homepage-img" />
         </Container>
       </main>
-      <div className="main-container">
-        <MainSection />
-      </div>
+      <MainSection />
       <Footer />
     </div>
   );
