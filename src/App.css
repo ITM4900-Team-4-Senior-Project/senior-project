@@ -209,3 +209,12 @@ footer .grid-container--region-right {
 .link-list--vertical ul li {
   padding-bottom: .5rem;
 }
+
+.login_button {
+    background-color: #A19E91 !important;
+}
+
+.dropdown-item {
+    font-size: .8rem !important;
+    color: #14b6e6 !important;
+}
