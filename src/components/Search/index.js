@@ -1,7 +1,7 @@
 const Search = () => {
   return (
     <search>
-      <div></div>
+      <div>{/* placeholder */}</div>
     </search>
   );
 };
