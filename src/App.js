@@ -21,7 +21,6 @@ import "./App.css";
 
 function App() {
   return (
-<<<<<<< HEAD
     <div className="App">
       <header>
         <div className="brand-container">
@@ -31,28 +30,6 @@ function App() {
         </div>
 
         <div className="navigation-container topnav">
-=======
-    <Router>
-      <div className="App">
-
-        <header>
-          <div className="brand-container">
-            <Container>
-              <Brand />
-            </Container>
-          </div>
-
-          <div className="navigation-container topnav">
-            <Container>
-              <Navigation />
-            </Container>
-          </div>
-
-        </header>
-
-        <main>
-          {/* Main body container. Ad, fluid="true" to make it full-width */}
->>>>>>> simon_nodejs-setup
           <Container>
             {/* The following is the mechanism that chooses which page to load. */}
             <Switch>
@@ -63,7 +40,6 @@ function App() {
               <Route path="*" component={PageNotFound} />
             </Switch>
           </Container>
-<<<<<<< HEAD
         </div>
         <link rel="stylesheet" type="text/css" href="styles.css" />
       </header>
@@ -77,16 +53,6 @@ function App() {
       <Footer />
     </div>
   );
-=======
-        </main>
-
-        <Footer />
-
-      </div>
-
-    </Router>
-  )
->>>>>>> simon_nodejs-setup
 }
 
 export default App;
