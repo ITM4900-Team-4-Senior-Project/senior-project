@@ -226,3 +226,7 @@ footer .grid-container--region-right {
 .page-not-found--wrapper > * {
   margin-bottom: 1rem;
 }
+
+.dropdown-item {
+  color: rgb(20, 132, 224) !important;
+}
