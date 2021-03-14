@@ -19,7 +19,7 @@ function Login() {
                 <Modal.Header closeButton>
                     <Modal.Title>Login</Modal.Title>
                 </Modal.Header>
-                <Form>
+                <Form className="mx-2">
                     <Form.Group controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
                         <Form.Control type="email" placeholder="Enter email" />
@@ -39,7 +39,7 @@ function Login() {
                 <Modal.Footer>
                     <a class="dropdown-item" href="#">New? Register an Account</a>
                     <a class="dropdown-item" href="#">Forgot password?</a>
-                    <Button variant="primary" onClick={handleClose}>
+                    <Button style={{backgroundColor:"#1D4E89"}} variant="primary" onClick={handleClose}>
                         Login
                     </Button>
                     <Button variant="Secondary" onClick={handleClose}>
