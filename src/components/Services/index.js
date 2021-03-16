@@ -9,57 +9,49 @@ const Services = () => {
           tutor today.
         </p>
       </div>
-          {/* comments */}
-          {/* Here's a comment from Dustin */}
-      <div className="service-row row-cols-1 row-cols-md-3 g-4">
-        <div className="col">
-          <div className="card h-100">
-            <img
-              src="images/calculator.jpg"
-              className="card-img-top"
-              alt="calculator-img"
-            />
-            <div className="card-body">
-              <h4 className="card-title">MATH</h4>
-              <p className="card-text">$15/hour</p>
-              <a href="filter.html" className="btn btn-primary">
-                Book Now
-              </a>
-            </div>
+      <div className="card-deck">
+        <div class="card">
+          <img
+            className="card-img-top"
+            src="images/calculator.jpg"
+            alt="math-img"
+          />
+          <div class="card-block">
+            <h3 class="card-title">MATH</h3>
+            <p class="card-text">$15/hr</p>
+            <a href="filter.html" className="btn btn-primary">
+              Book Now
+            </a>
           </div>
         </div>
 
-        <div className="col">
-          <div className="card h-100">
-            <img
-              src="images/english.jpg"
-              className="card-img-top"
-              alt="english-img"
-            />
-            <div className="card-body">
-              <h4 className="card-title">ENGLISH</h4>
-              <p className="card-text">$12/hour</p>
-              <a href="filter.html" className="btn btn-primary">
-                Book Now
-              </a>
-            </div>
+        <div class="card">
+          <img
+            className="card-img-top"
+            src="images/english.jpg"
+            alt="english-img"
+          />
+          <div class="card-block">
+            <h3 class="card-title">ENGLISH</h3>
+            <p class="card-text">$12/hr</p>
+            <a href="filter.html" className="btn btn-primary">
+              Book Now
+            </a>
           </div>
         </div>
 
-        <div className="col">
-          <div className="card h-100">
-            <img
-              src="images/science.jpg"
-              className="card-img-top"
-              alt="science-img"
-            />
-            <div className="card-body">
-              <h4 className="card-title">SCIENCE</h4>
-              <p className="card-text">$12/hour</p>
-              <a href="filter.html" className="btn btn-primary">
-                Book Now
-              </a>
-            </div>
+        <div class="card">
+          <img
+            className="card-img-top"
+            src="images/science.jpg"
+            alt="science-img"
+          />
+          <div class="card-block">
+            <h3 class="card-title">SCIENCE</h3>
+            <p class="card-text">$12/hr</p>
+            <a href="filter.html" className="btn btn-primary">
+              Book Now
+            </a>
           </div>
         </div>
       </div>
