@@ -1,6 +1,6 @@
 // Import packages
 import {
-  BrowserRouter as Router,
+  // BrowserRouter as Router,
   Switch,
   Route,
   BrowserRouter,
@@ -11,9 +11,7 @@ import { Container } from "react-bootstrap";
 
 import Brand from "./components/Brand";
 import Navigation from "./components/Navigation";
-import MainSection from "./components/MainSection";
 import Footer from "./components/Footer";
-import Services from "./components/Services";
 
 // Import page routes
 import Home from "./pages/home";
@@ -37,29 +35,27 @@ function App() {
 
         <div className="navigation-container topnav">
           <Container>
+            <Navigation />
             {/* The following is the mechanism that chooses which page to load. */}
-            <BrowserRouter>
-              <Switch>
-                <Route path="/" exact component={Home} />
-                <Route path="/about" component={About} />
-                <Route path="/how-it-works" component={HowItWorks} />
-                <Route path="/contact" component={Contact} />
-                <Route path="*" component={PageNotFound} />
-              </Switch>
-            </BrowserRouter>
           </Container>
         </div>
         <link rel="stylesheet" type="text/css" href="styles.css" />
       </header>
 
       <main>
-        <Brand />
-        <Navigation />
+        {/* <Brand /> */}
         <Container fluid="true">
-          <img src="/images/pencil-hero.jpg" alt="homepage-img" />
+          <BrowserRouter>
+            <Switch>
+              <Route path="/" exact component={Home} />
+              <Route path="/about" component={About} />
+              <Route path="/how-it-works" component={HowItWorks} />
+              <Route path="/contact" component={Contact} />
+              <Route path="*" component={PageNotFound} />
+            </Switch>
+          </BrowserRouter>
         </Container>
       </main>
-      <MainSection />
       <Footer />
     </div>
   );

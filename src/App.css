@@ -303,24 +303,33 @@ service .btn {
   margin-bottom: 10%;
 }
 
-/* .service-card-title {
-  color: #023e8a;
+/* Search/filter page CSS */
+#testimonials {
+  background-color: rgb(63, 109, 184);
+  text-align: center;
+}
+
+.reviews {
+  color: rgb(226, 226, 222);
   font-family: "Roboto", sans-serif;
-  padding: 3% 3%;
-  text-align: center;
-} */
+  padding: 0 25% 2% 25%;
+}
 
-/* .service-card-text {
-  color: #023e8a;
-  font-family: sans-serif;
-  font-size: 1.25rem;
-  text-align: center;
-} */
+.testimonial-img {
+  border-radius: 50%;
+  padding-bottom: 2%;
+  width: 10%;
+  height: 10%;
+}
 
-/* .service-row {
-  padding: 0 15% 0 15%;
-  text-align: center;
-} */
+.carousel-item {
+  padding: 5% 17%;
+}
+
+em {
+  color: rgb(226, 226, 222);
+}
+
 
 /* ========== */
 /* Page Style */
