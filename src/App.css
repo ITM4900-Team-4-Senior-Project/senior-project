@@ -257,6 +257,10 @@ service .card-deck {
   padding-bottom: 5%;
 }
 
+service .service-box {
+  background-color: white;
+}
+
 service .service-subject-header {
   color: #023e8a;
   font-family: "Roboto", sans-serif;
@@ -285,7 +289,7 @@ service .card-block {
   text-align: center;
 }
 
- service .card-title {
+service .card-title {
   color: #023e8a;
   font-family: "Roboto", sans-serif;
   padding-top: 15%;
@@ -294,10 +298,10 @@ service .card-block {
 service .card-text {
   color: #023e8a;
   font-family: sans-serif;
-  font-size: 1.50rem;
+  font-size: 1.5rem;
   padding-top: 5%;
   padding-bottom: 5%;
-} 
+}
 
 service .btn {
   margin-bottom: 10%;
@@ -329,7 +333,6 @@ service .btn {
 em {
   color: rgb(226, 226, 222);
 }
-
 
 /* ========== */
 /* Page Style */

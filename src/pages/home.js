@@ -1,5 +1,10 @@
 // Import necessary packages
+import React from "react";
+import { Nav } from "react-bootstrap";
 import { Helmet } from "react-helmet";
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
+import history from "./../history";
 
 const Home = () => {
   return (
@@ -26,9 +31,11 @@ const Home = () => {
                   science. We want to help students build a solid foundation
                   that will help foster their academic growth and beyond.
                 </p>
-                <a href="filter.html" class="btn btn-primary">
-                  Learn More
-                </a>
+                <Link to="./pages/service.js">
+                  <Button onClick={() => history.push("/service")}>
+                    Learn More
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -42,9 +49,11 @@ const Home = () => {
                   affordable pricing across all subject matter. You will not
                   find better pricing with any other tutor service websites.
                 </p>
-                <a href="filter.html" class="btn btn-primary">
-                  Learn More
-                </a>
+                <Link to="./pages/service.js">
+                  <Button onClick={() => history.push("/service")}>
+                    Learn More
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -59,9 +68,11 @@ const Home = () => {
                   today about how they can help your child with their
                   schoolwork.
                 </p>
-                <a href="filter.html" class="btn btn-primary">
-                  Learn More
-                </a>
+                <Link to="./pages/service.js">
+                  <Button onClick={() => history.push("/service")}>
+                    Learn More
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -76,9 +87,11 @@ const Home = () => {
                   providing exceptional service of connecting students with
                   tutors.
                 </p>
-                <a href="filter.html" class="btn btn-primary">
-                  Learn More
-                </a>
+                <Link to="./pages/service.js">
+                  <Button onClick={() => history.push("/service")}>
+                    Learn More
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
