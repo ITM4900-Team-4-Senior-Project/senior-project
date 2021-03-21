@@ -8,7 +8,8 @@ const Service = () => {
       <Helmet>
         <title>Happy Homework Helpers | Service</title>
       </Helmet>
-      <service>
+      {/* The follwoing will added appear on the /service page. */}
+      <div id="services">
         <div className="header-title">
           <h3 className="service-subject-header">SERVICES</h3>
           <hr className="service-hr" />
@@ -27,7 +28,7 @@ const Service = () => {
             <div className="card-block">
               <h3 className="card-title">MATH</h3>
               <p className="card-text">$15/hr</p>
-              <a href="search.js" className="btn btn-primary">
+              <a href="/path" className="btn btn-primary">
                 Book Now
               </a>
             </div>
@@ -42,7 +43,7 @@ const Service = () => {
             <div className="card-block">
               <h3 className="card-title">ENGLISH</h3>
               <p className="card-text">$12/hr</p>
-              <a href="search.js" className="btn btn-primary">
+              <a href="/path" className="btn btn-primary">
                 Book Now
               </a>
             </div>
@@ -57,13 +58,13 @@ const Service = () => {
             <div className="card-block">
               <h3 className="card-title">SCIENCE</h3>
               <p className="card-text">$12/hr</p>
-              <a href="search.js" className="btn btn-primary">
+              <a href="/path" className="btn btn-primary">
                 Book Now
               </a>
             </div>
           </div>
         </div>
-      </service>
+      </div>
     </div>
   );
 };
