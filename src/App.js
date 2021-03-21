@@ -20,7 +20,6 @@ import './App.css'
 
 function App() {
   return (
-    <Router>
       <div className="App">
 
         <header>
@@ -42,13 +41,15 @@ function App() {
           {/* Main body container. Ad, fluid="true" to make it full-width */}
           <Container>
             {/* The following is the mechanism that chooses which page to load. */}
-            <Switch>
-              <Route path="/" exact component={Home} />
-              <Route path="/about" component={About} />
-              <Route path="/how-it-works" component={HowItWorks} />
-              <Route path="/contact" component={Contact} />
-              <Route path="*" component={PageNotFound} />
-            </Switch>
+            <Router>
+              <Switch>
+                <Route path="/" exact component={Home} />
+                <Route path="/about" component={About} />
+                <Route path="/how-it-works" component={HowItWorks} />
+                <Route path="/contact" component={Contact} />
+                <Route path="*" component={PageNotFound} />
+              </Switch>
+            </Router>
           </Container>
         </main>
 
@@ -56,7 +57,6 @@ function App() {
 
       </div>
 
-    </Router>
   )
 }
 
