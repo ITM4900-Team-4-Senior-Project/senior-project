@@ -191,16 +191,16 @@ const Search = () => {
       {/* Search Result */}
       <div className="right-side">
         <div id="search-results">
-          <div class="card-search mb-3">
-            <div class="row g-0">
-              <div class="col-md-4">
+          <div className="card-search mb-3">
+            <div className="row g-0">
+              <div className="col-md-4">
                 <img src="../images/me.jpg" alt="savon-img" />
                 <p>Xuan Huynh</p>
               </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
+              <div className="col-md-8">
+                <div className="card-body">
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">
                     I've been tutoring for 5 years, all with Happy Homework
                     Helpers. I have a degree in IT Management and enjoy tutoring
                     students so they can achieve their full potential.
@@ -270,12 +270,14 @@ const Search = () => {
           </div>
         </div>
       </div>
-      <div class="quote">
+
+      {/* Blockquote */}
+      <div>
         <blockquote>
-          <h3>
+          <p className="quote">
             Education is the passport to the future, for tomorrow belongs to
             people who prepare for it today.
-          </h3>
+          </p>
         </blockquote>
       </div>
 
@@ -283,12 +285,12 @@ const Search = () => {
       <div className="testimonial">
         <div
           id="testimonial-controls"
-          class="carousel slide"
+          className="carousel slide"
           data-bs-ride="carousel"
         >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <h4 className="reviews">
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <h4 classNameName="reviews">
                 Happy Homework Helpers is so much more affordable compared to
                 similar tutoring services. Granted, they only offer three
                 subjects but these are core subjects.

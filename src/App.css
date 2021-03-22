@@ -313,6 +313,12 @@ service .btn {
   text-align: center;
 }
 
+.quote {
+  text-align: center;
+  font-size: 1.75rem;
+  margin: 0 25%;
+}
+
 .reviews {
   color: rgb(226, 226, 222);
   font-family: "Roboto", sans-serif;
