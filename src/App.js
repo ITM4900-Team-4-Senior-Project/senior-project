@@ -14,6 +14,7 @@ import About from './pages/about'
 import HowItWorks from './pages/how-it-works';
 import Contact from './pages/contact';
 import PageNotFound from './pages/404-page-not-found';
+import Signup from './pages/signup';
 
 // Import resources
 import './App.css'
@@ -47,7 +48,9 @@ function App() {
               <Route path="/about" component={About} />
               <Route path="/how-it-works" component={HowItWorks} />
               <Route path="/contact" component={Contact} />
+              <Route path="/signup" component={Signup} />
               <Route path="*" component={PageNotFound} />
+              
             </Switch>
           </Container>
         </main>

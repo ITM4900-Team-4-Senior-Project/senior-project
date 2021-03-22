@@ -1,7 +1,7 @@
 import { React, useState } from 'react'
 import { Link, Route, Switch } from 'react-router-dom'
 
-import { Navbar, Nav, Button, Modal, Form } from 'react-bootstrap'
+import { Navbar, Nav, Button, Modal, Form} from 'react-bootstrap'
 
 function Login() {
     const [show, setShow] = useState(false);
@@ -37,8 +37,8 @@ function Login() {
                     </Form.Group>
                 </Form>
                 <Modal.Footer>
-                    <a class="dropdown-item" href="#">New? Register an Account</a>
-                    <a class="dropdown-item" href="#">Forgot password?</a>
+                    <Nav.Link className="dropdown-item" href="/signup">New? Register an Account</Nav.Link>
+                    <Nav.Link className="dropdown-item" href="#">Forgot password?</Nav.Link>
                     <Button style={{backgroundColor:"#1D4E89"}} variant="primary" onClick={handleClose}>
                         Login
                     </Button>
@@ -49,7 +49,7 @@ function Login() {
             </Modal>
         </>
     );
-}
+} 
 
 const Navigation = () => {
     return (
