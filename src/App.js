@@ -15,6 +15,7 @@ import HowItWorks from './pages/how-it-works';
 import Contact from './pages/contact';
 import PageNotFound from './pages/404-page-not-found';
 import Signup from './pages/signup';
+import SignupTutor from './pages/signup-tutor';
 
 // Import resources
 import './App.css'
@@ -49,6 +50,7 @@ function App() {
               <Route path="/how-it-works" component={HowItWorks} />
               <Route path="/contact" component={Contact} />
               <Route path="/signup" component={Signup} />
+              <Route path="/signup-tutor" component={SignupTutor} />
               <Route path="*" component={PageNotFound} />
               
             </Switch>
