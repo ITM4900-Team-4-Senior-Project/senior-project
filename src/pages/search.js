@@ -26,12 +26,11 @@ const Search = () => {
           </DropdownButton>
           <br />
 
-          
-
           {/* Tutor gender preference */}
           <div id="gender-preference">
             <h6>
-            <strong>Gender:</strong></h6>
+              <strong>Gender:</strong>
+            </h6>
             <Form>
               {["checkbox"].map((type) => (
                 <div key={`default-${type}`} className="mb-3">
@@ -98,10 +97,10 @@ const Search = () => {
                 <div className="col-md-4">
                   <img
                     className="search-img"
-                    src="images/me.jpg"
+                    src="images/tutor2.jpeg"
                     alt="savon-img"
                   />
-                  <p className="search-name-card">Xuan Huynh</p>
+                  <p className="search-name-card">Saint Simba</p>
                   <Link to="/search" className="btn btn-primary">
                     Book Now
                   </Link>
@@ -134,10 +133,10 @@ const Search = () => {
                 <div className="col-md-4">
                   <img
                     className="search-img"
-                    src="images/john doe.png"
+                    src="images/tutor1.jpeg"
                     alt="savon-img"
                   />
-                  <p className="search-name-card">Xuan Huynh</p>
+                  <p className="search-name-card">Nina Sisideth</p>
                   <Link to="/search" className="btn btn-primary">
                     Book Now
                   </Link>
@@ -145,9 +144,11 @@ const Search = () => {
                 <div className="col-md-8">
                   <div className="search-card-body">
                     <p className="search-card-text">
-                      I have a degree in Computer Science with a minor in Cybersecurity. I have been tutoring for 
-                      about 3 years and I absolutely love it. It's invigorating seeing students being able to 
-                      comprehend the schoolwork where they otherwise I had before.{" "}
+                      I have a degree in Computer Science with a minor in
+                      Cybersecurity. I have been tutoring for about 3 years and
+                      I absolutely love it. It's invigorating seeing students
+                      being able to comprehend the schoolwork where they
+                      otherwise I had before.{" "}
                     </p>
                     <Stars />
                     <p class="search-card-rating">
@@ -167,6 +168,7 @@ const Search = () => {
 
       {/* Carousel */}
       <div id="testimonials">
+        <h1 className="reviews-header">Testimonials</h1>
         <Carousel>
           <Carousel.Item>
             <p className="carousel-text">
@@ -176,40 +178,48 @@ const Search = () => {
             </p>
             <img
               className="review-img d-block w-10"
-              src="images/me.jpg"
+              src="images/review1.jpeg"
               alt="First slide"
             />
-            <em>Savon Huynh, Minnesota</em>
+            <em>
+              Jane Nguyen <br />
+              Blaine, Minnesota
+            </em>
           </Carousel.Item>
 
           <Carousel.Item>
             <p className="carousel-text">
               Happy Homework Helpers has been a Godsend. The tutors are
               top-notch and are very good at their jobs. I would highly
-              recommend any parents that are on the fence about using a tutoring
+              recommend any parent that's on the fence about using a tutoring
               service.
             </p>
             <img
               className="review-img d-block w-10"
-              src="images/john doe.png"
+              src="images/review2.jpeg"
               alt="First slide"
             />
-            <em>Simon, React</em>
+            <em>
+              Julia Child <br />
+              Cookstown, MN
+            </em>
           </Carousel.Item>
 
           <Carousel.Item>
             <p className="carousel-text">
-              This tutoring service is by far the most affordable tutoring
-              service. They understand parents should not have to break the bank
-              to help their child succeed in school. Thank you Happy Homework
-              Helpers from a happy parent.
+              This tutoring service helped me become the smartest baby known to
+              man. I've gained a better appreciation for learning and it has
+              prepared me for high school, granted that's a few years away.
             </p>
             <img
               className="review-img d-block w-10"
-              src="images/john doe 2.png"
+              src="images/review3.jpeg"
               alt="First slide"
             />
-            <em>Dustin, Bootstrap</em>
+            <em>
+              Baby Simon <br />
+              To Be Determined, Earth
+            </em>
           </Carousel.Item>
         </Carousel>
       </div>

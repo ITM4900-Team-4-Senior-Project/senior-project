@@ -375,6 +375,13 @@ main .row {
   text-align: center;
 }
 
+.reviews-header {
+  text-align: center;
+  font-size: 3rem;
+  color: #023e8a;
+  line-height: 2;
+}
+
 em {
   color: white;
 }
