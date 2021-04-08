@@ -1,4 +1,5 @@
 // Import necessary packages
+import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 const Service = () => {
@@ -8,7 +9,7 @@ const Service = () => {
       <Helmet>
         <title>Happy Homework Helpers | Service</title>
       </Helmet>
-      {/* The follwoing will added appear on the /service page. */}
+      {/* The following will added appear on the /service page. */}
       <div id="services">
         <div className="header-title">
           <h3 className="service-subject-header">SERVICES</h3>
@@ -26,11 +27,11 @@ const Service = () => {
               alt="math-img"
             />
             <div className="card-block">
-              <h3 className="card-title">MATH</h3>
-              <p className="card-text">$15/hr</p>
-              <a href="/path" className="btn btn-primary">
+              <h3 className="card-subject">MATH</h3>
+              <p className="card-price">$15/hr</p>
+              <Link to="/search" className="btn btn-primary">
                 Book Now
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -41,11 +42,11 @@ const Service = () => {
               alt="english-img"
             />
             <div className="card-block">
-              <h3 className="card-title">ENGLISH</h3>
-              <p className="card-text">$12/hr</p>
-              <a href="/path" className="btn btn-primary">
+              <h3 className="card-subject">ENGLISH</h3>
+              <p className="card-price">$12/hr</p>
+              <Link to="/search" className="btn btn-primary">
                 Book Now
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -56,11 +57,11 @@ const Service = () => {
               alt="science-img"
             />
             <div className="card-block">
-              <h3 className="card-title">SCIENCE</h3>
-              <p className="card-text">$12/hr</p>
-              <a href="/path" className="btn btn-primary">
+              <h3 className="card-subject">SCIENCE</h3>
+              <p className="card-price">$12/hr</p>
+              <Link to="/search" className="btn btn-primary">
                 Book Now
-              </a>
+              </Link>
             </div>
           </div>
         </div>

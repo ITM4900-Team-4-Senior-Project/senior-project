@@ -31,7 +31,9 @@ const Home = () => {
                   science. We want to help students build a solid foundation
                   that will help foster their academic growth and beyond.
                 </p>
-                <Link to="/subjects" className="btn btn-primary">Learn More</Link>
+                <Link to="/search" className="btn btn-primary">
+                  Learn More
+                </Link>
               </div>
             </div>
           </div>
@@ -45,7 +47,9 @@ const Home = () => {
                   affordable pricing across all subject matter. You will not
                   find better pricing with any other tutor service websites.
                 </p>
-                <Link to="/service" className="btn btn-primary">Learn More</Link>
+                <Link to="/service" className="btn btn-primary">
+                  Learn More
+                </Link>
               </div>
             </div>
           </div>
@@ -60,7 +64,9 @@ const Home = () => {
                   today about how they can help your child with their
                   schoolwork.
                 </p>
-                <Link to="/tutors" className="btn btn-primary">Learn More</Link>
+                <Link to="/search" className="btn btn-primary">
+                  Learn More
+                </Link>
               </div>
             </div>
           </div>
@@ -75,7 +81,9 @@ const Home = () => {
                   providing exceptional service of connecting students with
                   tutors.
                 </p>
-                <Link to="/reviews" className="btn btn-primary">Learn More</Link>
+                <Link to="/search" href="#testimonials" className="btn btn-primary">
+                  Learn More
+                </Link>
               </div>
             </div>
           </div>

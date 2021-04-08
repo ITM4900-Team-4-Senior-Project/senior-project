@@ -16,6 +16,7 @@ import Footer from "./components/Footer";
 // Import page routes
 import Home from "./pages/home";
 import Service from "./pages/service";
+import Search from "./pages/search";
 import About from "./pages/about";
 import HowItWorks from "./pages/how-it-works";
 import Contact from "./pages/contact";
@@ -40,7 +41,6 @@ function App() {
             {/* The following is the mechanism that chooses which page to load. */}
           </Container>
         </div>
-        <link rel="stylesheet" type="text/css" href="styles.css" />
       </header>
 
       <main>
@@ -53,6 +53,7 @@ function App() {
               <Route path="/how-it-works" component={HowItWorks} />
               <Route path="/contact" component={Contact} />
               <Route path="/service" component={Service} />
+              <Route path="/search" component={Search} />
               <Route path="*" component={PageNotFound} />
             </Switch>
           </BrowserRouter>

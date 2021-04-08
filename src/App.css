@@ -251,17 +251,7 @@ main .row {
 }
 
 /* Services CSS */
-service .card-deck {
-  margin-left: 15rem;
-  margin-right: 15rem;
-  padding-bottom: 5%;
-}
-
-service .service-box {
-  background-color: white;
-}
-
-service .service-subject-header {
+.service-subject-header {
   color: #023e8a;
   font-family: "Roboto", sans-serif;
   font-size: 3rem;
@@ -269,14 +259,14 @@ service .service-subject-header {
   text-align: center;
 }
 
-service .service-hr {
+.service-hr {
   border: 4px solid #03045e;
   margin-left: 46%;
   margin-right: 46%;
   width: 8%;
 }
 
-service .service-description {
+.service-description {
   color: #023e8a;
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
@@ -285,59 +275,108 @@ service .service-description {
   text-align: center;
 }
 
-service .card-block {
+.card-subject {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  padding-top: 7%;
+}
+
+.card-price {
+  color: #023e8a;
+  font-family: "Roboto", sans-serif;
+  padding-top: 5%;
+  padding-bottom: 3%;
+  color: white;
+  font-size: 1.25rem;
+}
+
+.card-block {
   text-align: center;
 }
 
-service .card-title {
-  color: #023e8a;
-  font-family: "Roboto", sans-serif;
-  padding-top: 15%;
+.btn {
+  margin-bottom: 5%;
 }
 
-service .card-text {
-  color: #023e8a;
-  font-family: sans-serif;
-  font-size: 1.5rem;
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
-service .btn {
-  margin-bottom: 10%;
+.card-deck {
+  margin-left: 200px !important;
+  margin-right: 200px !important;
+  margin-bottom: 5%;
 }
 
 /* Search/filter page CSS */
-#testimonials {
-  background-color: rgb(63, 109, 184);
+.container-wrapper {
+  display: flex;
+  margin: 25px 125px 500px 125px;
+}
+
+#right-side {
+  position: absolute;
+  right: 200px;
+}
+
+#left-side {
+  display: inline-block;
+  margin-left: 100px;
+}
+
+#right-side {
+  display: inline-block;
+}
+
+.search-results {
+  border: 2px solid rgb(109, 178, 224);
+}
+
+.results-card {
+  background-color: white !important;
+  max-width: 700px;
+}
+
+.search-img {
+  padding-top: 30px;
+  padding-right: 15px;
+}
+
+.search-name-card {
+  padding-top: 15px;
+}
+
+.search-card-text {
+  padding-top: 30px;
+  text-align: left;
+}
+
+/* Carousel */
+.carousel {
+  background: rgb(4, 100, 179);
+  width: auto;
+  height: 550px;
+  margin: auto;
   text-align: center;
 }
 
-.quote {
-  text-align: center;
-  font-size: 1.75rem;
-  margin: 0 25%;
-}
-
-.reviews {
-  color: rgb(226, 226, 222);
-  font-family: "Roboto", sans-serif;
-  padding: 0 25% 2% 25%;
-}
-
-.testimonial-img {
-  border-radius: 50%;
-  padding-bottom: 2%;
+.review-img {
   width: 10%;
-  height: 10%;
+  border-radius: 100%;
+  margin: auto;
+  padding-bottom: 10px;
 }
 
-.carousel-item {
-  padding: 5% 17%;
+.carousel-text {
+  font-family: "Montserrat-Bold";
+  font-size: 2.25rem;
+  line-height: 1.25;
+  color: #ffffff;
+  padding: 2% 20%;
+}
+
+.carousel-inner {
+  text-align: center;
 }
 
 em {
-  color: rgb(226, 226, 222);
+  color: white;
 }
 
 /* ========== */
