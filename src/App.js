@@ -7,23 +7,23 @@ import {
 } from "react-router-dom";
 
 // Import components
-import { Container } from "react-bootstrap";
+import { Container } from 'react-bootstrap'
 
-import Brand from "./components/Brand";
-import Navigation from "./components/Navigation";
-import Footer from "./components/Footer";
+import Brand from './components/Brand'
+import Navigation from './components/Navigation'
+import Footer from './components/Footer'
 
 // Import page routes
-import Home from "./pages/home";
-import Service from "./pages/service";
-import Search from "./pages/search";
-import About from "./pages/about";
-import HowItWorks from "./pages/how-it-works";
-import Contact from "./pages/contact";
-import PageNotFound from "./pages/404-page-not-found";
+import Home from './pages/home'
+import About from './pages/about'
+import HowItWorks from './pages/how-it-works';
+import Contact from './pages/contact';
+import PageNotFound from './pages/404-page-not-found';
+import Signup from './pages/signup';
+import SignupTutor from './pages/signup-tutor';
 
 // Import resources
-import "./App.css";
+import './App.css'
 
 function App() {
   return (
@@ -54,7 +54,10 @@ function App() {
               <Route path="/contact" component={Contact} />
               <Route path="/service" component={Service} />
               <Route path="/search" component={Search} />
+              <Route path="/signup" component={Signup} />
+              <Route path="/signup-tutor" component={SignupTutor} />
               <Route path="*" component={PageNotFound} />
+              
             </Switch>
           </BrowserRouter>
         </Container>

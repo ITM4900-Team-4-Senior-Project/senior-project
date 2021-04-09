@@ -1,7 +1,7 @@
 * {
-  font-family: "Roboto", Helvetica, sans-serif;
+  font-family: 'Roboto', Helvetica, sans-serif;
   font-size: 14px;
-  letter-spacing: 0.04rem;
+  letter-spacing: .04rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -16,18 +16,19 @@
 
 .brand-container .navbar .brand-title {
   font-size: 1.5rem;
-  padding-left: 0.25rem;
+  padding-left: .25rem;
 }
+
 
 /* Navigation Styles */
 .topnav,
 .navigation-container {
   max-width: 100%;
-  background: #1d4e89;
+  background: #1D4E89;
 }
 
 .navigation-container .navbar {
-  padding: 1.5rem 0.5rem;
+  padding: 1.5rem .5rem;
 }
 
 img {
@@ -37,14 +38,11 @@ img {
 
 /* Footer Styles */
 footer {
-  background: linear-gradient(
-      200deg,
-      rgba(29, 78, 137, 0.6),
-      rgba(29, 78, 137, 0)
-    ),
-    linear-gradient(10deg, rgba(34, 29, 137, 0.6), rgba(0, 0, 100, 0)),
-    linear-gradient(330deg, rgba(29, 132, 137, 0.6), rgba(29, 78, 137, 0));
+  background: linear-gradient(200deg, rgba(29, 78, 137, 0.6) , rgba(29, 78, 137, 0) ),
+    linear-gradient(10deg, rgba(34, 29, 137, 0.6) , rgba(0, 0, 100, 0) ),
+    linear-gradient(330deg, rgba(29, 132, 137, 0.6) , rgba(29, 78, 137, 0) );
   padding: 2rem 0 0;
+
 }
 
 footer h2,
@@ -55,10 +53,10 @@ footer .h2 {
 
 footer h3:not(.newsletter-heading) {
   text-transform: uppercase;
-  font-size: 0.8rem;
-  letter-spacing: 0.05rem;
+  font-size: .8rem;
+  letter-spacing: .05rem;
   color: #6f6f6f;
-  padding-bottom: 0.5rem;
+  padding-bottom: .5rem;
 }
 
 footer a {
@@ -66,7 +64,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #4e58ab;
+  color: #4e58ab
 }
 
 footer a:focus {
@@ -76,8 +74,8 @@ footer a:focus {
 
 footer .footer-section {
   background: #ffffff;
-  box-shadow: -2px 4px 10px -2px rgba(0, 0, 0, 0.27);
-  border-radius: 0.25rem;
+  box-shadow: -2px 4px 10px -2px rgba(0,0,0,0.27);
+  border-radius: .25rem;
   margin-bottom: 1rem;
   padding: 2rem 1.75rem;
   min-height: 100%;
@@ -85,7 +83,7 @@ footer .footer-section {
 }
 
 footer .footer-section--contact > div:not(:last-child) {
-  border-bottom: 1px solid rgba(33, 33, 33, 0.25);
+  border-bottom: 1px solid rgba(33,33,33,.25);
   padding-bottom: 1.5rem;
 }
 
@@ -94,11 +92,11 @@ footer .footer-section--contact > div:not(:first-child) {
 }
 
 footer .footer-section--contact .brand > div:not(:last-child) {
-  padding-bottom: 0.5rem;
+  padding-bottom: .5rem;
 }
 
 footer .footer-section--contact .brand .copyright > * {
-  font-size: 0.85rem;
+  font-size: .85rem;
   color: #6f6f6f;
 }
 
@@ -107,7 +105,7 @@ footer .footer-section--contact .social-links a {
 }
 
 footer .footer-section--company-title {
-  padding-left: 0.25rem;
+  padding-left: .25rem;
 }
 
 footer .footer-section--legal {
@@ -116,22 +114,24 @@ footer .footer-section--legal {
 }
 
 @media screen and (min-width: 720px) {
+
   footer .footer-section--legal {
     display: flex;
     justify-content: space-between;
     text-align: unset;
   }
+
 }
 
 footer .site-attribution {
   margin: 0 auto;
-  font-size: 0.8rem;
+  font-size: .8rem;
   text-align: center;
   padding: 1rem 0 1rem;
 }
 
 footer .site-attribution > * {
-  font-size: 0.8rem;
+  font-size: .8rem;
 }
 
 /*               -----               */
@@ -140,7 +140,7 @@ footer .grid-container {
   display: grid;
   width: 100%;
   margin: 0 auto;
-  padding: 0 0.9375rem;
+  padding: 0 .9375rem;
   grid-gap: 1rem;
   grid-template-areas:
     "region-left"
@@ -167,8 +167,8 @@ footer .grid-container--region-right {
   }
 }
 
-@media screen and (min-width: 768px) {
-  footer .grid-container {
+@media screen and (min-width:768px) {
+  footer .grid-container{
     max-width: 720px;
   }
 }
@@ -177,7 +177,8 @@ footer .grid-container--region-right {
   footer .grid-container {
     max-width: 960px;
     grid-template-columns: 50% 50%;
-    grid-template-areas: "region-left region-right";
+    grid-template-areas:
+    "region-left region-right";
   }
 }
 
@@ -401,4 +402,8 @@ em {
 
 .page-not-found--wrapper > * {
   margin-bottom: 1rem;
+}
+
+.dropdown-item {
+  color: rgb(20, 132, 224) !important;
 }
