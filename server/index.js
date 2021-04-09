@@ -19,7 +19,8 @@ app.use(express.json())
 app.use(bodyParser.urlencoded({extended: true}))
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  req = 'SELECT * FROM senior_project.user_role;'
+  res.send('SELECT * FROM senior_project.user_role;')
 })
 
 app.post('/api/set', (req, res) => {
