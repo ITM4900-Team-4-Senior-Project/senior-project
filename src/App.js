@@ -15,6 +15,8 @@ import Footer from './components/Footer'
 
 // Import page routes
 import Home from './pages/home'
+import Service from './pages/service'
+import Search from './pages/search'
 import About from './pages/about'
 import HowItWorks from './pages/how-it-works';
 import Contact from './pages/contact';

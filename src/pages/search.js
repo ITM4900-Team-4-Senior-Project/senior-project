@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-import Stars from "/Users/savon-h/Desktop/Projects/senior-project/src/components/Stars/index.js";
+import Stars from "../components/Stars";
 import { Carousel, Dropdown, DropdownButton, Form } from "react-bootstrap";
 
 const Search = () => {
