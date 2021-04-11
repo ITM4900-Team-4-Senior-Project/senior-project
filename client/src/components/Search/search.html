@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+        rel="stylesheet" />
+        
+    <!-- CSS Styling -->
+    <link rel="stylesheet" type="text/css" href="css/filter.css" />
+
+    <title>Results | Happy Homework Helper</title>
+  </head>
+  <body>
+    <h6>Search/Filter Results:</h6>
+    
+    <!-- Dropdown Menu -->
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" 
+        data-bs-toggle="dropdown" aria-expanded="false">
+          All subjects:
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Math</a></li>
+          <li><a class="dropdown-item" href="#">English</a></li>
+          <li><a class="dropdown-item" href="#">Science</a></li>
+        </ul>
+    </div>
+
+    <!-- Checkbox --> 
+    <h6>Availability:</h6>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Monday
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Tuesday
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Wednesday
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Thursday
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Friday
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Saturday
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Sunday
+      </label>
+    </div>
+    <br/>
+
+    <h6>Sex:</h6>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Male
+      </label>
+    </div><div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Female
+      </label>
+    </div>
+    <br/>
+
+    <h6>Method:</h6>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-data" for="flexCheckDefault">
+        Online
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-data" for="flexCheckDefault">
+        In-Person
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-data" for="flexCheckDefault">
+        Both
+      </label>
+    </div>
+
+    <!-- Search Result w/Bootstrap Cards -->
+    <div id="search-results">
+      <div class="card lg-3" style="max-width: 840px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="me.jpg" alt="tutor-img" width="50%" height="60%">
+            <p>Xuan Huynh</p>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <div class="left-side">
+                <p class="card-text" style="float: left; width: 50%;">
+                  I've been tutoring for 5 years, all with Happy Homework Helpers. I have a degree in IT Management and enjoy tutoring
+                  students so they can achieve their full potential. 
+                </p>
+              </div>
+              
+              <!-- Star rating -->
+              <p class="card=text" style="float: left; width: 40%; margin-left: 30px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>  
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+                  <path d="M5.354 5.119L7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.519.519 0 0 1-.146.05c-.341.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.171-.403.59.59 0 0 1 .084-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027c.08 0 .16.018.232.056l3.686 1.894-.694-3.957a.564.564 0 0 1 .163-.505l2.906-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.002 2.223 8 2.226v9.8z"/>
+                </svg> 
+                4.8 (200)
+                <br/>
+                200 students tutored
+              </p>
+             
+            </div>
+          </div>
+           <a href="#" class="btn btn-primary btn-md" style="width: 125px; height: 40px;">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="quote">
+       <blockquote>
+        <h3>
+          Education is the passport to the future, for tomorrow belongs to people who prepare for it today.
+        </h3>
+      </blockquote>
+    </div>
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <div id="testimonial-controls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+                  <div class="carousel-item active">
+                      <h4 class="reviews">
+                          Happy Homework Helpers is so much more affordable compared to similar tutoring services. Granted, they only
+                          offer three subjects but these are core subjects. 
+                      </h4>
+                      <img class="testimonial-img" src="images/me.jpg" alt="my-image">
+                      <br>
+                      <em>Xuan, Lino Lakes, MN</em>
+                  </div>
+
+                  <div class="carousel-item">
+                      <h4 class="reviews">This company definitely understands the importance of education versus doing something solely 
+                          for profit. If you want affordable prices without sacrificing quality, then Happy Homework Helpers is the 
+                          the right choice for you. 
+                      </h4>
+                      <img class="testimonial-img" src="images/john doe 2.png" alt="my-image">
+                      <br>
+                      <em>Dustin, Big Earth, MN</em>
+                  </div>
+
+                  <div class="carousel-item">
+                      <h4 class="reviews">Tim was a great tutor for my child. He took his time to understand my child's struggles with math
+                          and created a learning plan that made it fun and exciting. His enthusiasm is second to none. 
+                      </h4>
+                      <img class="testimonial-img" src="images/john doe.png" alt="my-image">
+                      <br>
+                      <em>Simon, React, MN</em>
+                  </div>
+
+                  <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-controls"  data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                  </button>
+          
+                  <button class="carousel-control-next" type="button" data-bs-target="#testimonial-controls"  data-bs-slide="next">
+                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                       <span class="visually-hidden">Next</span>
+                  </button>
+          
+          </div>
+      </div>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+
+  </body>
+</html>
