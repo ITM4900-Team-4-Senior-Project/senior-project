@@ -13,7 +13,7 @@ const About = () => {
         <title>Happy Homework Helpers | About</title>
       </Helmet>
       
-      <Hero title="About Us" text="I am a mission statement!" imageURL="/images/library_1920x1080.jpg"/>
+      <Hero title="About Us" text="I am a mission statement! and a bunch of things to talk about. yay!" imageURL="/images/library_1920x1080.jpg"/>
       
       <div className="container mt-5">
 
