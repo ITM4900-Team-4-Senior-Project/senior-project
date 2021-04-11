@@ -60,7 +60,7 @@ const Navigation = () => {
                     <Nav.Link href="/">Home</Nav.Link>
                     <Nav.Link href="/how-it-works">How it Works</Nav.Link>
                     <Nav.Link href="/about">About</Nav.Link>
-                    <Nav.Link href="pricing">Contact</Nav.Link>
+                    <Nav.Link href="/contact">Contact</Nav.Link>
                 </Nav>
                     <Login />
                 <Nav>
