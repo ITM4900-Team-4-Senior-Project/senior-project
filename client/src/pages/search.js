@@ -2,7 +2,8 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import Stars from "../components/Stars";
-import { Carousel, Dropdown, DropdownButton, Form } from "react-bootstrap";
+import { Carousel, Dropdown, DropdownButton, Form, Container } from "react-bootstrap";
+import SubjectList from "../components/SubjectList";
 
 const Search = () => {
   return (
@@ -165,6 +166,10 @@ const Search = () => {
           </div>
         </div>
       </div>
+      
+      <Container>
+        <SubjectList />
+      </Container>
 
       {/* Carousel */}
       <div id="testimonials">

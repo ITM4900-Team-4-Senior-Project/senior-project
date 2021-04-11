@@ -12,6 +12,7 @@
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.1",
+    "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "gatsby-plugin-react-helmet": "^4.0.0",
     "jquery": "^3.6.0",

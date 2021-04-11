@@ -1,9 +1,8 @@
 const express = require('express')
-const app = express()
 const cors = require('cors')
-const bodyParser = require('body-parser')
-const port = 3030;
 const mysql = require('mysql')
+
+const app = express()
 
 // Connect to MySQL database
 const db_connection = mysql.createConnection({
@@ -13,21 +12,34 @@ const db_connection = mysql.createConnection({
   database: 'senior_project'
 })
 
-
+// Enable all CORS requests
 app.use(cors())
-app.use(express.json())
-app.use(bodyParser.urlencoded({extended: true}))
 
+// Parse application/json
+app.use(express.json())
+
+// Parse application/x-www-form-urlencoded
+app.use(express.urlencoded({ extended: false }))
+
+// This get request will return all records from the subject table.
 app.get('/api/subjects', (request, response) => {
-  const insertStatement = "insert into subject (subject_title, subject_level, subject_description) values ('Biology III', 'Advanced', 'Not for begginners Biology')"
-  db_connection.query(insertStatement, (err, result) => {
-    response.send("Inserted Complete!")
+  
+  const selectAll = "select * from subject;"
+
+  db_connection.query(selectAll, (err, result) => {
+    if (err) {
+      console.log("Error: ", err)
+      return
+    }
+    response.send(result)
   })
 })
 
 
-app.listen(port, () => {
-  console.log(
-    `Senior Project DB ... [RUNNING]`
-  )
+app.listen(3030, (err) => {
+  if (err) {
+    console.log("Error: ", err)
+    return
+  }
+  console.log("Senior Project DB ... [RUNNING]")
 })
