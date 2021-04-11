@@ -16,7 +16,7 @@ const HowItWorks = () => {
         
         <div className="row mt-5">
           <div className="col">
-            <h2 className="mb-3">Steps to success</h2>
+            <h2 className="mb-3">Steps to Success</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nisi quam cupiditate, necessitatibus, veritatis sapiente totam at ex, facilis velit doloribus. Accusantium fugiat repudiandae architecto expedita harum ipsam necessitatibus nostrum!</p>
           </div>
         </div>
