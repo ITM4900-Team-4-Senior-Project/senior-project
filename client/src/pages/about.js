@@ -1,23 +1,87 @@
 // Import necessary packages
+import { Card } from 'react-bootstrap'
 import { Helmet } from 'react-helmet'
 
+import Hero from '../components/Hero'
+
 const About = () => {
+
   return (
     <div>
       {/* This changes the page title in the browser tab. */}
       <Helmet>
         <title>Happy Homework Helpers | About</title>
       </Helmet>
-      <h1>About HHH</h1>
-      <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Cras ultricies ligula sed magna dictum porta. Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+      
+      <Hero title="About Us" text="I am a mission statement! and a bunch of things to talk about. yay!" imageURL="/images/library_1920x1080.jpg"/>
+      
+      <div className="container mt-5">
 
-      <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla quis lorem ut libero malesuada feugiat. Cras ultricies ligula sed magna dictum porta. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+        <div className="row">
+          <div className="col">
+            <div className="text-center">
+              <h2>Value Statement</h2>
+              <p className="mt-3">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Cras ultricies ligula sed magna dictum porta. Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+            </div>
+          </div>
+        </div>
 
-      <p>Curabitur aliquet quam id dui posuere blandit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec sollicitudin molestie malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.</p>
+        <div className="row">
+          <div className="col">
+            <h2>Meet the Team</h2>
+            <p>Proin eget tortor risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
 
-      <p>Proin eget tortor risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>
+        <div className="row mt-n5">
 
-      <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla porttitor accumsan tincidunt.</p>
+          <div className="col-sm-12 col-lg-4 p-3">
+            <Card>
+              <Card.Img variant="top" src="/images/user_placeholder.jpg" />
+              <Card.Body>
+                <Card.Title>Savon</Card.Title>
+                <Card.Text>
+                  Some quick example text to build on the card title and make up the bulk of
+                  the card's content.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </div>
+
+          <div className="col-sm-12 col-lg-4 p-3">
+            <Card>
+              <Card.Img variant="top" src="/images/user_placeholder.jpg" />
+              <Card.Body>
+                <Card.Title>Dustin</Card.Title>
+                <Card.Text>
+                  Some quick example text to build on the card title and make up the bulk of
+                  the card's content.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </div>
+
+          <div className="col-sm-12 col-lg-4 p-3">
+            <Card>
+              <Card.Img variant="top" src="/images/user_placeholder.jpg" />
+              <Card.Body>
+                <Card.Title>Simon</Card.Title>
+                <Card.Text>
+                  Some quick example text to build on the card title and make up the bulk of
+                  the card's content.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </div>
+
+        </div>
+
+        <div className="row">
+          <div className="col"><a href="/contact" className="btn btn-primary btn-lg">Contact Us</a></div>
+        </div>
+
+      </div>
+
     </div>
   )
 }

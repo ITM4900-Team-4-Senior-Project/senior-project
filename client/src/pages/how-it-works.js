@@ -1,5 +1,7 @@
 // Import necessary packages
 import { Helmet } from 'react-helmet'
+import Hero from '../components/Hero'
+import Step from '../components/Step'
 
 const HowItWorks = () => {
   return (
@@ -7,18 +9,47 @@ const HowItWorks = () => {
       <Helmet>
         <title>Happy Homework Helpers | Home</title>
       </Helmet>
-      <h1>How it Works</h1>
 
-      <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Cras ultricies ligula sed magna dictum porta. Proin eget tortor risus. Donec rutrum congue leo eget malesuada.</p>
+      <Hero title="How it Works" text="Some fancy words to sell the service to people" imageURL="/images/how-it-works_hero.jpg" />
 
-      <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan tincidunt. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+      <div className="container">
+        
+        <div className="row mt-5">
+          <div className="col">
+            <h2 className="mb-3">Steps to Success</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nisi quam cupiditate, necessitatibus, veritatis sapiente totam at ex, facilis velit doloribus. Accusantium fugiat repudiandae architecto expedita harum ipsam necessitatibus nostrum!</p>
+          </div>
+        </div>
 
-      <p>Donec rutrum congue leo eget malesuada. Sed porttitor lectus nibh. Pellentesque in ipsum id orci porta dapibus. Nulla porttitor accumsan tincidunt. Pellentesque in ipsum id orci porta dapibus.</p>
+        <div className="row mt-n1">
+          <div className="col-sm-12 col-lg-4"><Step step="1" /></div>
+          <div className="col-sm-12 col-lg-8 pt-5">
+            <h3 className="fs-3">Sign Up</h3>
+            <p className="mt-3">Some text to explain why signing up is important</p>
+            <a href="/signup" className="btn btn-primary btn-lg mt-3">Sign Up</a>
+          </div>
+        </div>
 
-      <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+        <div className="row mt-n1">
+          <div className="col-sm-12 col-lg-4"><Step step="2" /></div>
+          <div className="col-sm-12 col-lg-8 pt-5">
+            <h3 className="fs-3">Find a Tutor</h3>
+            <p className="mt-3">Some text to explain how to find a tutor</p>
+            <a href="/search" className="btn btn-primary btn-lg mt-3">Tutors</a>
+          </div>
+        </div>
 
-      <p>Donec sollicitudin molestie malesuada. Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+        <div className="row mt-n1">
+          <div className="col-sm-12 col-lg-4"><Step step="3" /></div>
+          <div className="col-sm-12 col-lg-8 pt-5">
+            <h3 className="fs-3">Book a Session</h3>
+            <p className="mt-3">Some text to explain how to book a session</p>
+            <a href="/search" className="btn btn-primary btn-lg mt-3">Book a Session</a>
+          </div>
+        </div>
 
+      </div>
+      
     </div>
   )
 }
