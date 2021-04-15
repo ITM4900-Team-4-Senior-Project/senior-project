@@ -101,7 +101,7 @@ const Search = () => {
                     src="images/tutor2.jpeg"
                     alt="savon-img"
                   />
-                  <p className="search-name-card">Saint Simba</p>
+                  <p className="search-name-card">Michelle Kingston</p>
                   <Link to="/search" className="btn btn-primary">
                     Book Now
                   </Link>
@@ -137,7 +137,7 @@ const Search = () => {
                     src="images/tutor1.jpeg"
                     alt="savon-img"
                   />
-                  <p className="search-name-card">Nina Sisideth</p>
+                  <p className="search-name-card">Nina Crookston</p>
                   <Link to="/search" className="btn btn-primary">
                     Book Now
                   </Link>
@@ -212,9 +212,8 @@ const Search = () => {
 
           <Carousel.Item>
             <p className="carousel-text">
-              This tutoring service helped me become the smartest baby known to
-              man. I've gained a better appreciation for learning and it has
-              prepared me for high school, granted that's a few years away.
+              I can't wait to reach out to Happy Homework Helpers for their tutoring services when I'm older.
+              I can only imagine how much helpful they'll be with all my school needs. 
             </p>
             <img
               className="review-img d-block w-10"
