@@ -26,6 +26,7 @@ import SignupTutor from './pages/signup-tutor';
 
 // Import resources
 import './App.css'
+import Subjects from "./pages/Subjects";
 
 function App() {
   return (
@@ -58,6 +59,7 @@ function App() {
               <Route path="/search" component={Search} />
               <Route path="/signup" component={Signup} />
               <Route path="/signup-tutor" component={SignupTutor} />
+              <Route path="/subjects" component={Subjects} />
               <Route path="*" component={PageNotFound} />
               
             </Switch>

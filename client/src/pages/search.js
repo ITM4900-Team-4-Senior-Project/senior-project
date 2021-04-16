@@ -166,10 +166,6 @@ const Search = () => {
           </div>
         </div>
       </div>
-      
-      <Container>
-        <SubjectList />
-      </Container>
 
       {/* Carousel */}
       <div id="testimonials">
