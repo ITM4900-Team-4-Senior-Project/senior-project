@@ -48,7 +48,7 @@ const HowItWorks = () => {
           </div>
           <div className="col-sm-12 col-lg-8 pt-5">
             <h3 className="fs-3">Chat with the tutor.</h3>
-            <p className="mt-3">Chat with the tutor to gain some insights.</p>
+            <p className="mt-3">Chat with the tutor to gain some insight.</p>
             <a href="/search" className="btn btn-primary btn-lg mt-3">
               Tutors
             </a>

@@ -256,7 +256,6 @@ em {
   color: rgb(20, 132, 224) !important;
 }
 
-
 /* Bootstrap Tabs */
 .tab-content {
   padding: 2rem;
@@ -268,4 +267,8 @@ em {
 .subject-content--wrapper {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.about-us {
+  width: 750px;
 }
