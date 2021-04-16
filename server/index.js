@@ -35,6 +35,20 @@ app.get('/api/subjects', (request, response) => {
   })
 })
 
+// This get request will return all tutor records from the user table.
+app.get('/api/user', (request, response) => {
+  
+  const selectAll = "select * from user where user_role = 2;"
+
+  db_connection.query(selectAll, (err, result) => {
+    if (err) {
+      console.log("Error: ", err)
+      return
+    }
+    response.send(result)
+  })
+})
+
 
 app.listen(3030, (err) => {
   if (err) {
