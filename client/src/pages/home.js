@@ -9,7 +9,7 @@ const Home = () => {
       <Helmet>
         <title>Happy Homework Helpers | Home</title>
       </Helmet>
-      <img src="/images/pencil-hero.jpg" alt="" />
+      <img src="/images/pencil-hero.jpg" className="pencil-size" alt="" />
       <div>
         <section id="top-info">
           <p class="slogan">
@@ -78,7 +78,11 @@ const Home = () => {
                   providing exceptional service of connecting students with
                   tutors.
                 </p>
-                <Link to="/search" href="#testimonials" className="btn btn-primary">
+                <Link
+                  to="/search"
+                  href="#testimonials"
+                  className="btn btn-primary"
+                >
                   Learn More
                 </Link>
               </div>

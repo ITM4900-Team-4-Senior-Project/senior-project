@@ -1,7 +1,7 @@
 * {
-  font-family: 'Roboto', Helvetica, sans-serif;
+  font-family: "Roboto", Helvetica, sans-serif;
   font-size: 14px;
-  letter-spacing: .04rem;
+  letter-spacing: 0.04rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -12,18 +12,18 @@
 
 .brand-container .navbar .brand-title {
   font-size: 1.5rem;
-  padding-left: .25rem;
+  padding-left: 0.25rem;
 }
 
 /* Navigation Styles */
 .topnav,
 .navigation-container {
   max-width: 100%;
-  background: #1D4E89;
+  background: #1d4e89;
 }
 
 .navigation-container .navbar {
-  padding: 1.5rem .5rem;
+  padding: 1.5rem 0.5rem;
 }
 
 img {
@@ -55,6 +55,11 @@ img {
 /* Main Section CSS */
 main .card {
   background-color: #134074;
+}
+
+.pencil-size {
+  width: 100%;
+  height: auto;
 }
 
 main .slogan {

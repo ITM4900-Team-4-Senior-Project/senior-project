@@ -110,8 +110,6 @@ const Signup = () => {
           <Button variant="primary" type="submit">
             Submit
           </Button>
-
-          <Nav.Link className="text-center" style={{color: "#1484e0"}} href="/signup-tutor">Interested in Becoming a Tutor? Sign up Here!</Nav.Link>
         </Form>
     </div>
   )
