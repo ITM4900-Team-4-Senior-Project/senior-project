@@ -68,6 +68,27 @@ app.get('/api/user', (request, response) => {
   })
 })
 
+// Adds user
+app.post('/api/user/add', (require, response) => {
+
+  const userFirstName = require.body.first_name
+  const userLastName = require.body.last_name
+  const userEmail = require.body.email
+  const userZIP = require.body.user_geo_code
+  const userRole = require.body.user_role
+
+  const USER_ADD = "INSERT INTO user (first_name, last_name, email, user_geo_code, user_role) VALUES (?,?,?,?,?)"
+
+  db_connection.query(USER_ADD, [userFirstName, userLastName, userEmail, userZIP, userRole], (error, result) => {
+    if (error) {
+      console.log("Error: ", error)
+      return
+    }
+    response.send(result)
+  })
+
+})
+
 // Listening for errors
 app.listen(3030, (error) => {
   if (error) {

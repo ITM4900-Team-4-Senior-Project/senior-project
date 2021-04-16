@@ -2,19 +2,62 @@
 import { Helmet } from 'react-helmet'
 
 import { Button, Form, Col, Nav } from 'react-bootstrap'
+import { useState, useEffect } from 'react' 
+import axios from 'axios'
 
 const Signup = () => {
+
+    // Set some default states for data collection
+    const [userFirstName, setFirstName] = useState('')
+    const [userLastName, setLastName] = useState('')
+    const [userEmail, setEmail] = useState('')
+    const [userZIP, setZIP] = useState('')
+    const [userRole, setRole] = useState('')
+  
+    // Set a default state for form validation
+    const [validated, setValidated] = useState(false);
+  
+    // What should we do with a drunkin' sailor (i.e, web form)
+    const handleSubmit = (event) => {
+      // What does the form state contain
+      const form = event.currentTarget;
+      // Do a little validation
+      if (form.checkValidity() === false) {
+        event.preventDefault();
+        event.stopPropagation();
+        setValidated(true);
+      } else {
+        setValidated(true);
+        axios.post(
+          "http://localhost:3030/api/user/add", 
+          {
+            first_name: userFirstName, 
+            last_name: userLastName, 
+            email: userEmail,
+            user_geo_code: userZIP,
+            user_role: userRole
+        })
+      }
+    };
+
   return (
     <div className="my-2 mx-3">
       <Helmet>
         <title>Happy Homework Helpers | Signup</title>
       </Helmet>
       <h1>Sign Up For Happy Homework Helpers</h1>
-      <Form>
+      <Form
+        noValidate 
+        onSubmit={handleSubmit}
+        validated={validated}>
         <Form.Row>
           <Form.Group as={Col} controlId="formGridEmail">
             <Form.Label>Email</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
+            <Form.Control 
+            onChange={(event) => {setEmail(event.target.value)}}
+            required
+            type="email" 
+            placeholder="Enter email" />
           </Form.Group>
 
           <Form.Group as={Col} controlId="formGridPassword">
@@ -26,80 +69,38 @@ const Signup = () => {
         <Form.Row>
           <Form.Group as={Col} controlId="formGridFirstName">
             <Form.Label>First Name</Form.Label>
-              <Form.Control placeholder="First Name" />
+              <Form.Control 
+              onChange={(event) => {setFirstName(event.target.value)}}
+              required
+              placeholder="First Name" />
           </Form.Group>
           <Form.Group as={Col} controlId="formGridLastName">
             <Form.Label>Last Name</Form.Label>
-              <Form.Control placeholder="Last Name" />
+              <Form.Control 
+              onChange={(event) => {setLastName(event.target.value)}}
+              required
+              placeholder="Last Name" />
           </Form.Group>
         </Form.Row>
         <Form.Row>
-          <Form.Group as={Col} controlId="formGridCity">
-            <Form.Label>City</Form.Label>
-              <Form.Control />
+          <Form.Group as={Col} controlId="formGridZIP">
+            <Form.Label>ZIP Code</Form.Label>
+              <Form.Control 
+              onChange={(event) => {setZIP(event.target.value)}}
+              required/>
           </Form.Group>
 
-          <Form.Group as={Col} controlId="formGridState">
-            <Form.Label>State</Form.Label>
-              <Form.Control as="select" defaultValue="Choose...">
+          <Form.Group as={Col} controlId="formGridRole">
+            <Form.Label>Role</Form.Label>
+              <Form.Control 
+              onChange={(event) => {setRole(event.target.value)}}
+              required
+              as="select" defaultValue="Choose...">
                 <option value="0">Choose...</option>
-                <option value="AL">Alabama</option>
-	              <option value="AK">Alaska</option>
-	              <option value="AZ">Arizona</option>
-	              <option value="AR">Arkansas</option>
-	              <option value="CA">California</option>
-	              <option value="CO">Colorado</option>
-	              <option value="CT">Connecticut</option>
-	              <option value="DE">Delaware</option>
-	              <option value="DC">District Of Columbia</option>
-	              <option value="FL">Florida</option>
-	              <option value="GA">Georgia</option>
-	              <option value="HI">Hawaii</option>
-	              <option value="ID">Idaho</option>
-	              <option value="IL">Illinois</option>
-	              <option value="IN">Indiana</option>
-	              <option value="IA">Iowa</option>
-	              <option value="KS">Kansas</option>
-	              <option value="KY">Kentucky</option>
-	              <option value="LA">Louisiana</option>
-	              <option value="ME">Maine</option>
-	              <option value="MD">Maryland</option>
-	              <option value="MA">Massachusetts</option>
-	              <option value="MI">Michigan</option>
-	              <option value="MN">Minnesota</option>
-	              <option value="MS">Mississippi</option>
-	              <option value="MO">Missouri</option>
-	              <option value="MT">Montana</option>
-	              <option value="NE">Nebraska</option>
-	              <option value="NV">Nevada</option>
-	              <option value="NH">New Hampshire</option>
-	              <option value="NJ">New Jersey</option>
-	              <option value="NM">New Mexico</option>
-	              <option value="NY">New York</option>
-	              <option value="NC">North Carolina</option>
-	              <option value="ND">North Dakota</option>
-	              <option value="OH">Ohio</option>
-	              <option value="OK">Oklahoma</option>
-	              <option value="OR">Oregon</option>
-	              <option value="PA">Pennsylvania</option>
-	              <option value="RI">Rhode Island</option>
-	              <option value="SC">South Carolina</option>
-	              <option value="SD">South Dakota</option>
-	              <option value="TN">Tennessee</option>
-	              <option value="TX">Texas</option>
-	              <option value="UT">Utah</option>
-	              <option value="VT">Vermont</option>
-	              <option value="VA">Virginia</option>
-	              <option value="WA">Washington</option>
-	              <option value="WV">West Virginia</option>
-	              <option value="WI">Wisconsin</option>
-	              <option value="WY">Wyoming</option>
+                <option value="1">Student</option>
+	              <option value="2">Tutor</option>
+	              <option value="3">Parent</option>
               </Form.Control>
-          </Form.Group>
-
-          <Form.Group as={Col} controlId="formGridZip">
-            <Form.Label>Zip</Form.Label>
-              <Form.Control />
           </Form.Group>
         </Form.Row>
 
