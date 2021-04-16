@@ -22,23 +22,42 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
 // This get request will return all records from the subject table.
-app.get('/api/subjects', (request, response) => {
+app.get('/api/subjects', (rquire, response) => {
   
-  const selectAll = "select * from subject;"
+  const SELECT_ALL = "SELECT * FROM subject;"
 
-  db_connection.query(selectAll, (err, result) => {
-    if (err) {
-      console.log("Error: ", err)
+  db_connection.query(SELECT_ALL, (error, result) => {
+    if (error) {
+      console.log("Error: ", error)
       return
     }
     response.send(result)
   })
 })
 
+// Adds subjects
+app.post('/api/subjects/add', (require, response) => {
 
-app.listen(3030, (err) => {
-  if (err) {
-    console.log("Error: ", err)
+  const subjectTitle = require.body.subject_title
+  const subjectDescription = require.body.subject_description
+  const subjectLevel = require.body.subject_level
+
+  const SUBJECT_ADD = "INSERT INTO subject (subject_title, subject_description, subject_level) VALUES (?,?,?)"
+
+  db_connection.query(SUBJECT_ADD, [subjectTitle, subjectDescription, subjectLevel], (error, result) => {
+    if (error) {
+      console.log("Error: ", error)
+      return
+    }
+    response.send(result)
+  })
+
+})
+
+
+app.listen(3030, (error) => {
+  if (error) {
+    console.log("Error: ", error)
     return
   }
   console.log("Senior Project DB ... [RUNNING]")

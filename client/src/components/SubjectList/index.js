@@ -18,21 +18,20 @@ const SubjectList = () => {
   // If data can be retrived do something with it
   if (data) {
     content = 
-    <div>
-      <h2 className="text-center">List of Subjects</h2>
+    <div className="subject-listing--wrapper">
       <table className="table table-striped table-bordered">
         <thead>
           <tr>
-            <th scope="col">Subject Title</th>
-            <th scope="col">Subject Description</th>
-            <th scope="col">Subject Level</th>
+            <th scope="col" className="subject-listing--subject-title">Subject Title</th>
+            <th scope="col" className="subject-listing--subject-description">Subject Description</th>
+            <th scope="col" className="subject-listing--subject-level">Subject Level</th>
           </tr>
         </thead>
         <tbody>
 
           {/* Process the data object returned by the subject api */}
           {data.map((subject, index) => (
-            <tr data-index={index}>
+            <tr data-index={index} data-subject-level={subject.subject_level}>
               <td>{subject.subject_title}</td>
               <td>{subject.subject_description}</td>
               <td>{subject.subject_level}</td>

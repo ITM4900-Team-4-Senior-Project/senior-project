@@ -1,10 +1,7 @@
 // Import necessary packages
 import React from "react";
-import { Nav } from "react-bootstrap";
 import { Helmet } from "react-helmet";
-import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import history from "./../history";
 
 const Home = () => {
   return (

@@ -1,6 +1,5 @@
 // Import packages
 import {
-  // BrowserRouter as Router,
   Switch,
   Route,
   BrowserRouter,
@@ -23,10 +22,10 @@ import Contact from './pages/contact';
 import PageNotFound from './pages/404-page-not-found';
 import Signup from './pages/signup';
 import SignupTutor from './pages/signup-tutor';
+import Subjects from "./pages/Subjects";
 
 // Import resources
 import './App.css'
-import Subjects from "./pages/Subjects";
 
 function App() {
   return (
@@ -61,7 +60,6 @@ function App() {
               <Route path="/signup-tutor" component={SignupTutor} />
               <Route path="/subjects" component={Subjects} />
               <Route path="*" component={PageNotFound} />
-              
             </Switch>
           </BrowserRouter>
         </Container>
