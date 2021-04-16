@@ -31,7 +31,7 @@ const Home = () => {
                   science. We want to help students build a solid foundation
                   that will help foster their academic growth and beyond.
                 </p>
-                <Link to="/search" className="btn btn-primary">
+                <Link to="/subjects" className="btn btn-primary">
                   Learn More
                 </Link>
               </div>

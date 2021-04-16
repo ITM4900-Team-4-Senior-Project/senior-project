@@ -17,6 +17,11 @@
   text-shadow: 2px 2px 4px rgba(0,0,0,.4);
 }
 
+.hero--wrapper .hero-title--overlay.right {
+  left: unset;
+  right: 10%;
+}
+
 .hero--wrapper .hero-title--overlay::after {
   position: absolute;
   content: "";

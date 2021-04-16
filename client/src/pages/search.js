@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import Stars from "../components/Stars";
 import { Carousel, Dropdown, DropdownButton, Form, Container } from "react-bootstrap";
-import SubjectList from "../components/SubjectList";
+import TutorList from "../components/TutorList";
 
 const Search = () => {
   return (
@@ -127,7 +127,6 @@ const Search = () => {
               </div>
             </div>
           </div>
-
           <div className="search-results">
             <div className="results-card card mb-3">
               <div className="results-row row g-0">
@@ -166,9 +165,9 @@ const Search = () => {
           </div>
         </div>
       </div>
-      
+
       <Container>
-        <SubjectList />
+        <TutorList />
       </Container>
 
       {/* Carousel */}
