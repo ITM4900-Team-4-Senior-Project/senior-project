@@ -13,11 +13,11 @@ const Signup = () => {
     const [userEmail, setEmail] = useState('')
     const [userZIP, setZIP] = useState('')
     const [userRole, setRole] = useState('')
+    const [userPassword, setPassword] = useState('')
   
     // Set a default state for form validation
     const [validated, setValidated] = useState(false);
   
-    // What should we do with a drunkin' sailor (i.e, web form)
     const handleSubmit = (event) => {
       // What does the form state contain
       const form = event.currentTarget;
@@ -35,7 +35,8 @@ const Signup = () => {
             last_name: userLastName, 
             email: userEmail,
             user_geo_code: userZIP,
-            user_role: userRole
+            user_role: userRole,
+            password: userPassword
         })
       }
     };
@@ -54,15 +55,18 @@ const Signup = () => {
           <Form.Group as={Col} controlId="formGridEmail">
             <Form.Label>Email</Form.Label>
             <Form.Control 
-            onChange={(event) => {setEmail(event.target.value)}}
-            required
-            type="email" 
-            placeholder="Enter email" />
+              onChange={(event) => {setEmail(event.target.value)}}
+              required
+              type="email" 
+              placeholder="Enter email" />
           </Form.Group>
 
           <Form.Group as={Col} controlId="formGridPassword">
             <Form.Label>Password</Form.Label>
-            <Form.Control type="password" placeholder="Password" />
+            <Form.Control 
+              onChange={(event) => {setPassword(event.target.value)}}
+              required
+              type="password" placeholder="Password" />
           </Form.Group>
         </Form.Row>
 
@@ -70,16 +74,16 @@ const Signup = () => {
           <Form.Group as={Col} controlId="formGridFirstName">
             <Form.Label>First Name</Form.Label>
               <Form.Control 
-              onChange={(event) => {setFirstName(event.target.value)}}
-              required
-              placeholder="First Name" />
+                onChange={(event) => {setFirstName(event.target.value)}}
+                required
+                placeholder="First Name" />
           </Form.Group>
           <Form.Group as={Col} controlId="formGridLastName">
             <Form.Label>Last Name</Form.Label>
               <Form.Control 
-              onChange={(event) => {setLastName(event.target.value)}}
-              required
-              placeholder="Last Name" />
+                onChange={(event) => {setLastName(event.target.value)}}
+                required
+                placeholder="Last Name" />
           </Form.Group>
         </Form.Row>
         <Form.Row>

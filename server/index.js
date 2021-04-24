@@ -76,10 +76,11 @@ app.post('/api/user/add', (require, response) => {
   const userEmail = require.body.email
   const userZIP = require.body.user_geo_code
   const userRole = require.body.user_role
+  const userPassword = require.body.password
 
-  const USER_ADD = "INSERT INTO user (first_name, last_name, email, user_geo_code, user_role) VALUES (?,?,?,?,?)"
+  const USER_ADD = "INSERT INTO user (first_name, last_name, email, user_geo_code, user_role, password) VALUES (?,?,?,?,?,?)"
 
-  db_connection.query(USER_ADD, [userFirstName, userLastName, userEmail, userZIP, userRole], (error, result) => {
+  db_connection.query(USER_ADD, [userFirstName, userLastName, userEmail, userZIP, userRole, userPassword], (error, result) => {
     if (error) {
       console.log("Error: ", error)
       return
