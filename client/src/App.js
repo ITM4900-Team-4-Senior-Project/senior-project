@@ -21,7 +21,7 @@ import HowItWorks from './pages/how-it-works';
 import Contact from './pages/contact';
 import PageNotFound from './pages/404-page-not-found';
 import Signup from './pages/signup';
-import SignupTutor from './pages/signup-tutor';
+import UserExists from './pages/userexists';
 import Subjects from "./pages/Subjects";
 
 // Import resources
@@ -57,7 +57,7 @@ function App() {
               <Route path="/service" component={Service} />
               <Route path="/search" component={Search} />
               <Route path="/signup" component={Signup} />
-              <Route path="/signup-tutor" component={SignupTutor} />
+              <Route path="/userexists" component={UserExists} />
               <Route path="/subjects" component={Subjects} />
               <Route path="*" component={PageNotFound} />
             </Switch>
