@@ -78,17 +78,26 @@ app.post('/api/user/add', (require, response) => {
   const userRole = require.body.user_role
   const userPassword = require.body.password
 
-  const USER_ADD = "INSERT INTO user (first_name, last_name, email, user_geo_code, user_role, password) VALUES (?,?,?,?,?,?)"
+db_connection.query("SELECT COUNT(*) AS cnt FROM user WHERE email = ? " , 
+userEmail , function(error, data){
+       if(data[0].cnt > 0){
+         // User exists throw error  
+        console.log("User Exists", error)
+       }else{
+        // Success user will insert 
+        const USER_ADD = "INSERT INTO user (first_name, last_name, email, user_geo_code, user_role, password) VALUES (?,?,?,?,?,?)"
 
-  db_connection.query(USER_ADD, [userFirstName, userLastName, userEmail, userZIP, userRole, userPassword], (error, result) => {
-    if (error) {
-      console.log("Error: ", error)
-      return
-    }
-    response.send(result)
-  })
-
-})
+        db_connection.query(USER_ADD, [userFirstName, userLastName, userEmail, userZIP, userRole, userPassword], (error, result) => {
+          if (error) {
+            console.log("Error: ", error)
+            return
+                     }
+            response.send(result)
+                   })
+               }
+           })                  
+      })
+   
 
 // Listening for errors
 app.listen(3030, (error) => {
