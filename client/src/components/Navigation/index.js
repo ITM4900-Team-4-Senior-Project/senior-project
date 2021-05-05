@@ -11,7 +11,7 @@ function Login() {
 
     return (
         <>
-            <Button className="login_button shadow-none" variant="primary" onClick={handleShow}>
+            <Button className="login_button shadow-none mb-2" variant="primary" onClick={handleShow}>
                 Login/Register
             </Button>
 
